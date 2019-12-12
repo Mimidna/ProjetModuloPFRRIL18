@@ -1,11 +1,11 @@
-# ProjetWebRIL18Nantes
-Projet 2019
+# ProjetModuloRIL18
+Projet 2018
 
-## Site vitrine pour Personaliser et vendre des voitures
+## Application WEB créer des devis pour la société Modulo
 
-Voici le site internet pour personaliser et avoir des estimations de voiture 
-pur un projet web en RIL 2018 de Nantes
-,kkvfd
+Voici le site internet pour personaliser et avoir des estimations de maison
+pur un projet fils rouge en RIL 2018 de Nantes
+
 ### Technologie du projet 
 
 HTML 5, 
@@ -38,7 +38,7 @@ Pour visualiser le résultat vous aurez juste besoin d'un navigateur.
 
 
 ### Auteurs
-Les personnes ayant contribué à ce projet sont David Richomme, Julien Fiala, Nicolas Marde, Henri Ferron et Loren JOUAN.
+Les personnes ayant contribué à ce projet sont David Richomme, Julien Fiala et Loren JOUAN.
 
 
 ### Licence
