@@ -23,6 +23,6 @@
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">
-        All rights reserved by Madera. Copyright © 2019     
+        All rights reserved by Madera. Copyright @ 2019     
     </div>
   </footer>;

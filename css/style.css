@@ -123,7 +123,7 @@ a {
     }
 
 
-/***************MENU NAVBAR*****************/
+/***************entête*****************/
 #sogeti-labs-logo-menu {
     margin-bottom: 5%;
     max-width: 300px;
@@ -178,12 +178,18 @@ a {
     font-size: 3.2rem;
     color: peru;
 }
+/*********entete Index**********/
 
+#deconnexion {
+    background-color: peru;
+
+    color: black;
+    border: none;
+}
 
 
 /*************Connexion*************************/
-#co{
-
+#co {
 }
 
 #form-connexion {
