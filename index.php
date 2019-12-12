@@ -48,6 +48,9 @@ include "include/header.php";
 <!--CONTENU-->
 
 <?php
+
+
+        include "contenu/espacePerso.php"
    // if(isset($_REQUEST['page']))
     //{
       //  include "contenu/".$_REQUEST['page'].".php";
