@@ -4,8 +4,8 @@ Projet 2019
 ## Site vitrine pour Personaliser et vendre des voitures
 
 Voici le site internet pour personaliser et avoir des estimations de voiture 
-pour un projet web en RIL 2018 de Nantes
-
+pur un projet web en RIL 2018 de Nantes
+,kkvfd
 ### Technologie du projet 
 
 HTML 5, 
@@ -17,7 +17,7 @@ PHP 7.
 
 ### Disposition du projet 
 
-Le projet est décomposé en 4 dossiers
+Le projet est dÃ©composÃ© en 4 dossiers
 	CSS : contient tous les feuilles CSS.
 	Images : contient toutes les images que l'on retrouve dans le projet.
 	JS : contient les scripts JS avec les dossiers footers et headers.
@@ -27,22 +27,22 @@ Le projet est décomposé en 4 dossiers
 
 ### Commencer
 Pour commencer, cloner le lien Git sur votre machine. 
-N'hésitez pas à créer une branche pour des modifications ou des tests sur le code.
+N'hÃ©sitez pas Ã  crÃ©er une branche pour des modifications ou des tests sur le code.
 
-### Conditions préalables
-Il est préférable d'utiliser un IDE 
+### Conditions prÃ©alables
+Il est prÃ©fÃ©rable d'utiliser un IDE 
 
 
 ### Lancer les tests
-Pour visualiser le résultat vous aurez juste besoin d'un navigateur.
+Pour visualiser le rÃ©sultat vous aurez juste besoin d'un navigateur.
 
 
 ### Auteurs
-Les personnes ayant contribué à ce projet sont David Richomme, Julien Fiala, Nicolas Marde, Henri Ferron et Loren JOUAN.
+Les personnes ayant contribuÃ© Ã  ce projet sont David Richomme, Julien Fiala, Nicolas Marde, Henri Ferron et Loren JOUAN.
 
 
 ### Licence
-Ce projet est propriété du CESI.
+Ce projet est propriÃ©tÃ© du CESI.
 
 ### Remerciements
-Merci à toute personne dont le code a été utilisé et à monsieur Jacques Danilo pour son aide.
+Merci Ã  toute personne dont le code a Ã©tÃ© utilisÃ© et Ã  monsieur Jacques Danilo pour son aide.
