@@ -11,15 +11,6 @@
 include "include/header.php";
 ?>
 
-
-
-<body >
-
-<!--ENTETE-->
-
-
-
-
 <header>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
@@ -38,10 +29,40 @@ include "include/header.php";
                             <?php  $link_address1 = 'connexion.php';
                                 echo "<a href='".$link_address1."'>
                                     Déconnexion </a>"; ?>
+									
+									
                         </button>
+						
+						<?php
+						
+						// créé l'instance de connexion
+						// Se connecter à MySQL
+						
+						try
+							{
+								// On se connecte à MySQL
+								$bdd = new PDO('mysql:host=localhost;dbname=modulo;charset=utf8', 'root', '');
+							}
+							catch(Exception $e)
+							{
+								// En cas d'erreur, on affiche un message et on arrête tout
+									die('Erreur : '.$e->getMessage());
+							}
+									
+						?>
                 </nav>
             </div>
 </header>
+
+
+<body >
+
+<!--ENTETE-->
+
+
+
+
+
 
 
 
@@ -50,7 +71,7 @@ include "include/header.php";
 <?php
 
 
-        include "contenu/espacePerso.php"
+        include "contenu/connexion.php"
    // if(isset($_REQUEST['page']))
     //{
       //  include "contenu/".$_REQUEST['page'].".php";
