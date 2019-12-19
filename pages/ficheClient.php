@@ -29,17 +29,17 @@ include "../include/menuMain.php";
                      <a href="listeClients.php">
                      Liste Client
                      </a>
-                    </button>
+                </button>
 
             </div>
-                        <div class="row">
+            <div class="row">
               
                 <button class="favorite styled" 
                      type="button">
                      <a href="creationClient.php">
                      Nouveau client
                      </a>
-                    </button>
+                </button>
 
             </div>
 
@@ -50,10 +50,9 @@ include "../include/menuMain.php";
                      <a href="listeClients.php">
                      Nouveau projet
                      </a>
-                    </button>
-
+                </button>
             </div>
-            <!-- /.row -->
+
  </div>
 
 

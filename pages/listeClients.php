@@ -26,8 +26,8 @@ include "../include/menuMain.php";
     <div class="recherche_p">
 
         <form action="/search" id="searchthis" method="get">
-        <input id="search" name="q" type="text" placeholder="Rechercher" />
-        <input id="search-btn" type="submit" value="Rechercher" />
+            <input id="search" name="q" type="text" placeholder="Rechercher" />
+            <input id="search-btn" type="submit" value="Rechercher" />
         </form>
 
     </div>

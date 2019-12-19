@@ -77,33 +77,32 @@
                         For success/fail messages -->
                         
 
-        <button type="submit" class="btn btn-primary" id="connexion" ">
-         <?php  
-		  $user = $_POST['name'];
-		  $mdp = $_POST['mdp'];
+                        <button type="submit" class="btn btn-primary" id="connexion" ">
+                             <?php  
+		                         $user = $_POST['name'];
+		                         $mdp = $_POST['mdp'];
 		  
-		  $sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
+		                        $sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
 		  
-		  // $data = $reponse->fetch()
+		                        // $data = $reponse->fetch()
 		  
-		  //$commercial = mysql_fetch_array($req)['commercial_id'];
+		                        //$commercial = mysql_fetch_array($req)['commercial_id'];
 		  
-		  if ($reponse->fetch()) {
-			echo 'Connexion OK';
-		 //$link_address1 = 'connexion.php';
-            //echo "<a href='".$link_address1."'> "; 
-		  }
-				?>
-                <a href="pages/espacePerso.php>		</a>
-        </button>
+		                        if ($reponse->fetch()) {
+			                        echo 'Connexion OK';
+		                            //$link_address1 = 'connexion.php';
+                                    //echo "<a href='".$link_address1."'> "; 
+		                        }
+				                ?>
+                             <a href="pages/espacePerso.php>		</a>
+                        </button>
 
                         <!-- si la connexion est valide par le mot de passe et l'identifiant l'utilisateur se retrouve a la page index.php sinon un message d'erreur s'affiche informant de qu'il est irroné
                         et qu'il faut recommance en cas d'oublie merci de contacter le service informatique.-->
-                    </form>
+                      </form>
                 </div>
-
             </div>
-            <!-- /.row -->
+
  </div>
 
 

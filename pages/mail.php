@@ -31,17 +31,17 @@ include "../include/menuMain.php";
 
         </div>
 
-    <div class="remerciements">
-        <dl>
-            <dt>Vous avez accodré votre confiance en VOLTIK et nous vous en remercions.</dt>
+        <div class="remerciements">
+            <dl>
+                <dt>Vous avez accodré votre confiance en VOLTIK et nous vous en remercions.</dt>
         
        
                 <dd>
-                 Le devis numéro 1234567898 Abien été envoyer à l'adesse bvoefj@gmail.com 
-                 </br>
-                 Et envoyer au bureau d'étude
+                     Le devis numéro 1234567898 Abien été envoyer à l'adesse bvoefj@gmail.com 
+                     </br>
+                     Et envoyer au bureau d'étude
                 </dd>
-		</dl>
+		    </dl>
         </div>
         
     </div>
