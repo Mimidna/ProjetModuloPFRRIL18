@@ -68,7 +68,7 @@ pre {
 }
 
 a {
-    color: white;
+    color: black;
     font-size:1.5rem;
 }
 
@@ -98,6 +98,11 @@ a {
 
 .count {
     /* font-weight: bold;*/
+}
+
+#image-rondin {
+    text-align: center;
+    background: url('../css/logos/rondinFloue.jpg') center no-repeat;
 }
 
 /****************BALISE ANCRAGE*********/
@@ -249,3 +254,64 @@ a {
 
 }
 
+/*************************Espace perso***************/
+.buttonPerso{
+
+    text-align:center;
+}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/************************Liste Clients********************/
+/* Fond du gadget de la barre de recherche */
+.recherche_p {
+    background-color: #eeeeee; /* Couleur de fond */
+    border-style: solid; /* Style de la bordure  */
+    border-width: 1px; /* Epaisseur de la bordure  */
+    border-color: #dddddd; /* Couleur de la bordure  */
+    padding: 10px 10px 10px 10px; /* Espace entre les bords et le contenu : haut droite bas gauche  */
+}
+
+#searchthis #search {
+    background-color: #ffffff; /* Couleur de fond */
+    border-style: solid; /* Style de la bordure  */
+    border-width: 1px; /* Epaisseur de la bordure  */
+    border-color: #dddddd; /* Couleur de la bordure  */
+}
+
+
+.listeClient {
+    list-style-type: none;
+
+}
+
+/*********************CréationClient********************/
+
+
+
+
+#sauvegarde {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}

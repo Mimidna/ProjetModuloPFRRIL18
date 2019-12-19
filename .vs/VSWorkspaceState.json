@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\contenu",
-    "\\css"
+    "\\css",
+    "\\include",
+    "\\js",
+    "\\pages"
   ],
-  "SelectedNode": "\\css\\style.css",
+  "SelectedNode": "\\include\\menuMain.php",
   "PreviewInSolutionExplorer": false
 }

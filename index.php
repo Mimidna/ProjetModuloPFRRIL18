@@ -2,14 +2,36 @@
 <html lang="fr">
 
 
-  <?php
-// include 'database.php';
-?> 
 <!--HEADER-->
 
-<?php
-include "include/header.php";
-?>
+<head>
+
+	<!-- META INFORMATIONS-->
+    <title>Modulo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Modulo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+    <!--BOOSTRAP-->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4.3.1.css" />
+
+    <!--CSS-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+</head>
+
+
+
+<body >
+
+<!--ENTETE-->
+
 
 <header>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
@@ -22,72 +44,73 @@ include "include/header.php";
                             <img src="css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
                         </a>
                         <div class="entete">
-                         NOM du commercial <!-- a mettre avec base de donéee-->
-                        </div>      
-
-                        <button type="submit" class="btn btn-primary" id="deconnexion">
-                            <?php  $link_address1 = 'connexion.php';
-                                echo "<a href='".$link_address1."'>
-                                    Déconnexion </a>"; ?>
-									
-									
-                        </button>
-						
-						<?php
-						
-						// créé l'instance de connexion
-						// Se connecter à MySQL
-						
-						try
-							{
-								// On se connecte à MySQL
-								$bdd = new PDO('mysql:host=localhost;dbname=modulo;charset=utf8', 'root', '');
-							}
-							catch(Exception $e)
-							{
-								// En cas d'erreur, on affiche un message et on arrête tout
-									die('Erreur : '.$e->getMessage());
-							}
-									
-						?>
+                         MODULO 
+                        </div>                      
                 </nav>
             </div>
 </header>
 
 
-<body >
-
-<!--ENTETE-->
-
-
-
-
-
-
-
 
 <!--CONTENU-->
 
-<?php
+<div class="jumbotron" id="form-connexion">
+            <div class="row">
+                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4">
+
+                    <form name="sentMessage" id="co" novalidate>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label class="id"><strong>Identifiant</strong></label>
+                                <input type="text" class="form-control" id="name" required
+                                       data-validation-required-message="Merci d'entrer votre ID">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label class="mdp"> <strong>MDP</strong></label>
+                                <input type="mdp" class="form-control" id="mdp" required
+                                       data-validation-required-message="Merci d'entrer votre MDP">
+                            </div>
+                        </div>
+                     <!--    <div id="success"></div>
+                        For success/fail messages -->
+                        
+
+        <button type="submit" class="btn btn-primary" id="connexion" ">
+         <?php  
+		  $user = $_POST['name'];
+		  $mdp = $_POST['mdp'];
+		  
+		  $sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
+		  
+		  // $data = $reponse->fetch()
+		  
+		  //$commercial = mysql_fetch_array($req)['commercial_id'];
+		  
+		  if ($reponse->fetch()) {
+			echo 'Connexion OK';
+		 //$link_address1 = 'connexion.php';
+            //echo "<a href='".$link_address1."'> "; 
+		  }
+				?>
+                <a href="pages/espacePerso.php>		</a>
+        </button>
+
+                        <!-- si la connexion est valide par le mot de passe et l'identifiant l'utilisateur se retrouve a la page index.php sinon un message d'erreur s'affiche informant de qu'il est irroné
+                        et qu'il faut recommance en cas d'oublie merci de contacter le service informatique.-->
+                    </form>
+                </div>
+
+            </div>
+            <!-- /.row -->
+ </div>
 
 
-        include "contenu/connexion.php"
-   // if(isset($_REQUEST['page']))
-    //{
-      //  include "contenu/".$_REQUEST['page'].".php";
-    //} else
-    //{
-      //  include "contenu/accueil.php";
-    //}
-?>
 
 
 
-<!--FOOTER-->
 
-  <?php
-	include "include/footer.php";
-	?>
 
 
 

@@ -15,7 +15,7 @@
   
         <div class="col-md mb-md-0 mb-3">
              
-				<img src="css/logos/Madera.png" id="madera-logo" alt="Madera"/>
+				<img src="../css/logos/Madera.png" id="madera-logo" alt="Madera"/>
              
         </div>
       </div>

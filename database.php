@@ -3,7 +3,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -15,7 +15,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -36,7 +36,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -56,7 +56,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -100,7 +100,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -135,7 +135,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -166,7 +166,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -185,7 +185,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -205,7 +205,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -227,7 +227,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$base = "voltik";
+		$base = "modulo";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$base);
 
@@ -244,7 +244,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$base = "voltik";
+	$base = "modulo";
 	// Create connection
 	$conn = new mysqli($servername, $username, $password,$base);
 
@@ -275,7 +275,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$base = "voltik";
+	$base = "modulo";
 	// Create connection
 	$conn = new mysqli($servername, $username, $password,$base);
 
