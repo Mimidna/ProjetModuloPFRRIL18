@@ -34,21 +34,14 @@ include "../include/menuMain.php";
                </div>
            
            
-               <div class="modele">
-                 Créative<br/>
-                 <a href="ficheModele.php">
-                     <img src="../images/2.png" alt="contemporaine" class="imgModele"/>
-                 </a>
+               <div class="descriptionModele">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis, est id molestie laoreet, 
+                turpis nunc laoreet felis, sit amet suscipit enim nulla id lorem. Ut et porta nisl. Morbi euismod dolor nec felis ornare tincidunt. 
+                Fusce facilisis diam vitae pulvinar sagittis. Aenean auctor dolor a malesuada blandit. Vivamus maximus lorem non risus varius rhoncus. 
+                Suspendisse potenti. Curabitur vitae ante sed justo eleifend egestas scelerisque porta urna. 
                </div>
             
-          
-               <div class="modele">
-                 Exclusive<br/>
-                 <a href="ficheModele.php">
-                     <img src="../images/3.png" alt="deluxe" class="imgModele"/>
-                 </a>
-               </div>
-            
+             <button type="submit" class="btn btn-primary" id="selectionModele"><a href="ficheProjet.php">Séléctionné modèle</a></button>
             
  </div>
 

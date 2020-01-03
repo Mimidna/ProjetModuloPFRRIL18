@@ -95,15 +95,17 @@ a {
         text-align: center;
         font-size: 2.0rem;
     }
+    .retour{
 
-.count {
+    }
+    .count {
     /* font-weight: bold;*/
-}
+    }
 
-#image-rondin {
+    #image-rondin {
     text-align: center;
     background: url('../css/logos/rondinFloue.jpg') center no-repeat;
-}
+    }
 
 /****************BALISE ANCRAGE*********/
 
@@ -314,4 +316,111 @@ a {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/******************FicheClient******************/
+
+.nomClient{
+   text-align:center;
+
+}
+.iconeClient{
+    max-width:30px;
+    max-height:30px;
+
+}
+.titreDevis{
+    font-size:1.3rem;
+    margin-left:2%;
+
+}
+.listeDevis {
+    list-style-type: none;
+}
+#nouveauProjet {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top: 50px;
+    margin-left: 45%;
+}
+
+/******Choix Gamme***************/
+.imgGamme{
+
+}
+.gamme{
+
+}
+/******Fiche Gamme***********/
+#selectionGamme {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top: 50px;
+    margin-left: 45%;
+}
+.descriptionGamme{
+
+
+}
+
+/******Choix Modele**********/
+.modele{
+
+}
+
+
+/*******Fiche Modele********/
+.descriptionModele{
+
+}
+
+.selectionModele{
+
+
+}
+
+/*******fiche Projet***********/
+
+#btn-ajoutOption {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+#btn-devis {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: peru;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.ficheProjet{
+
 }

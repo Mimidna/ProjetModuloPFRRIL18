@@ -14,9 +14,9 @@
          </div>
   
         <div class="col-md mb-md-0 mb-3">
-             
+                     <a class="navbar-brand" href="https://www.fr.madera.com/">
 				<img src="../css/logos/Madera.png" id="madera-logo" alt="Madera"/>
-             
+             </a>
         </div>
       </div>
     </div>

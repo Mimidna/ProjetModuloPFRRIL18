@@ -5,7 +5,7 @@
                    
 
                         <!-- En tete Madera -->
-                        <a class="navbar-brand" href="https://www.fr.madera.com/">
+                        <a class="navbar-brand" href="../pages.espacePerso.php">
                             <img src="../css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
                         </a>
                         <div class="entete">

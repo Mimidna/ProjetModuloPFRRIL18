@@ -22,7 +22,7 @@ include "../include/menuMain.php";
 <!--CONTENU-->
 
 <div id="image-rondin ">
-    <a href="ficheClient.php">
+    <a href="choixGamme.php">
         <img src="../css/logos/flecheretour.png" alt="retour" class="retour" />
     </a>
 
@@ -35,22 +35,14 @@ include "../include/menuMain.php";
                </div>
            
            
-               <div class="gamme">
-                 Gamme Contemporaine<br/>
-                 <a href="ficheGamme.php">
-                     <img src="../images/contemporaine.jpg" alt="contemporaine" class="imgGamme"/>
-                 </a>
+               <div class="descriptionGamme">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis, est id molestie laoreet, 
+                turpis nunc laoreet felis, sit amet suscipit enim nulla id lorem. Ut et porta nisl. Morbi euismod dolor nec felis ornare tincidunt. 
+                Fusce facilisis diam vitae pulvinar sagittis. Aenean auctor dolor a malesuada blandit. Vivamus maximus lorem non risus varius rhoncus. 
+                Suspendisse potenti. Curabitur vitae ante sed justo eleifend egestas scelerisque porta urna. 
                </div>
             
-          
-               <div class="gamme">
-                 Gamme Deluxe<br/>
-                 <a href="ficheGamme.php">
-                     <img src="../images/deluxe.jpg" alt="deluxe" class="imgGamme"/>
-                 </a>
-               </div>
-            
-            
+             <button type="submit" class="btn btn-primary" id="selectionGamme"><a href="choixModele.php">Séléctionné gamme</a></button>
  </div>
 
 

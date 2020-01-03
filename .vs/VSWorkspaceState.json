@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\css\\logos",
     "\\include",
     "\\js",
     "\\pages"
   ],
-  "SelectedNode": "\\include\\menuMain.php",
+  "SelectedNode": "\\pages\\ficheClient.php",
   "PreviewInSolutionExplorer": false
 }
