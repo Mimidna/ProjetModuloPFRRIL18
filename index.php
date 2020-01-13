@@ -94,7 +94,7 @@
                                     //echo "<a href='".$link_address1."'> "; 
 		                        }
 				                ?>
-                             <a href="pages/espacePerso.php">		</a>
+                             <a href="pages/espacePerso.php">Connexion		</a>
                         </button>
 
                         <!-- si la connexion est valide par le mot de passe et l'identifiant l'utilisateur se retrouve a la page index.php sinon un message d'erreur s'affiche informant de qu'il est irroné

@@ -38,16 +38,14 @@ include "../include/menuMain.php";
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet"> 
-                       Chambre : 
-                        <input type="number" name="howmuch"  min="1" max="6">
+                       Chambre : 4
                    </div>
                 </div>
             </div>
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet"> 
-                       Salle de bain : 
-                        <input type="number" name="howmuch" min="1" max="4">
+                       Salle de bain : 2
                    </div>
                 </div>
             </div>
@@ -55,22 +53,12 @@ include "../include/menuMain.php";
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet">
                     Toit Ardoise
-                       <label class="switch">
-                            <input type="checkbox">
-                                <span class="slider round"></span>
-                        </label>
-                    Toit Tuile
                    </div>
                 </div>
             </div>
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet">
-                    Isolant Syntétique
-                       <label class="switch">
-                            <input type="checkbox">
-                                <span class="slider round"></span>
-                        </label>
                     Isolant Biologique
                    </div>
                 </div>
@@ -79,22 +67,12 @@ include "../include/menuMain.php";
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet">
                     Murs extérieurs bois
-                       <label class="switch">
-                            <input type="checkbox">
-                                <span class="slider round"></span>
-                        </label>
-                    Murs extérieurs crépis
                    </div>
                 </div>
             </div>
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="ficheProjet">
-                    Porte d'entrée semi vitrée
-                       <label class="switch">
-                            <input type="checkbox">
-                                <span class="slider round"></span>
-                        </label>
                     Porte d'entrée pleine
                    </div>
                 </div>
@@ -116,14 +94,10 @@ include "../include/menuMain.php";
                    </div>
                 </div>
             </div>
-                <div class="row">
-               <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
-                   <div class="nomClient">
-                     Gamme et Modèle: Chalet Exclusive
-                   </div>
-                </div>
-            </div>
 
+
+           
+            <button type="submit" class="btn btn-primary" id="btn-ajoutOption"><a href="ficheProjet.php">Ajout option</a></button>
             <button type="submit" class="btn btn-primary" id="btn-devis"><a href="devis.php">Devis</a></button>
  </div>
 
