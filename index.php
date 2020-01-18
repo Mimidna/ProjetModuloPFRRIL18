@@ -79,10 +79,10 @@
 
                         <button type="submit" class="btn btn-primary" id="connexion" ">
                              <?php  
-		                         $user = $_POST['name'];
-		                         $mdp = $_POST['mdp'];
+		                        // $user = $_POST['name'];
+		                         //$mdp = $_POST['mdp'];
 		  
-		                        $sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
+		                        //$sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
 		  
 		                        // $data = $reponse->fetch()
 		  

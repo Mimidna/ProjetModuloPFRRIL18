@@ -3,11 +3,10 @@
     "",
     "\\css",
     "\\css\\logos",
-    "\\images",
     "\\include",
     "\\js",
     "\\pages"
   ],
-  "SelectedNode": "\\pages\\ficheClient.php",
+  "SelectedNode": "\\index.php",
   "PreviewInSolutionExplorer": false
 }
