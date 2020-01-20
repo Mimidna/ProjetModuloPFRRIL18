@@ -73,25 +73,14 @@
                                        data-validation-required-message="Merci d'entrer votre MDP">
                             </div>
                         </div>
-                     <!--    <div id="success"></div>
-                        For success/fail messages -->
                         
-
-                        <button type="submit" class="btn btn-primary" id="connexion" ">
+                        <button type="submit" class="btn btn-primary" id="connexion">
                              <?php  
-		                        // $user = $_POST['name'];
-		                         //$mdp = $_POST['mdp'];
-		  
-		                        //$sql = $bdd->query("SELECT commercial_id FROM commercial WHERE commercial_identifiant =".$user." AND commercial_motDePasse=".$mdp);
-		  
-		                        // $data = $reponse->fetch()
-		  
-		                        //$commercial = mysql_fetch_array($req)['commercial_id'];
+
 		  
 		                        if ($reponse->fetch()) {
 			                        echo 'Connexion OK';
-		                            //$link_address1 = 'connexion.php';
-                                    //echo "<a href='".$link_address1."'> "; 
+
 		                        }
 				                ?>
                              <a href="pages/espacePerso.php">Connexion		</a>
