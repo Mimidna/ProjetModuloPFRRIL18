@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+//if (session_start==0)
+//    {
+//    session_start();
+//        }
+
+$nomCommercial = $_SESSION['username'];
+$prenomCommercial = $_SESSION['userFirstName'];
+?>
+
 <header>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
@@ -9,11 +22,12 @@
                             <img src="../css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
                         </a>
                         <div class="entete">
-                         NOM du commercial <!-- a mettre avec base de donéee-->
+                        <h2><?php echo 'Bienvenue : '. $prenomCommercial.'  '.$nomCommercial. ' !' ?></h2>
                         </div>      
 
                         <button type="submit" class="btn btn-primary" id="deconnexion">
                             <?php  $link_address1 = '../index.php';
+                            session_destroy();
                                 echo "<a href='".$link_address1."'>
                                     Déconnexion </a>"; ?>
 									
