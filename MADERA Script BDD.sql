@@ -17,6 +17,7 @@ CREATE TABLE CLIENT(
         client_adresseLigne2 Varchar (100) NOT NULL ,
         client_ville         Varchar (50) NOT NULL ,
         client_telephone     Varchar (12) NOT NULL ,
+	code_postale	     Int (5) NOT NULL ,	
         client_mail          Varchar (25) NOT NULL
 	,CONSTRAINT CLIENT_PK PRIMARY KEY (client_id)
 )ENGINE=InnoDB;
