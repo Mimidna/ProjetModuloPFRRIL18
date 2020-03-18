@@ -2,22 +2,24 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
+
+DROP DATABASE IF EXISTS modulo;
 CREATE DATABASE modulo;
 USE modulo;
 
 #------------------------------------------------------------
 # Table: CLIENT
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS CLIENT;
 CREATE TABLE CLIENT(
         client_id            Int  Auto_increment  NOT NULL ,
         client_nom           Varchar (50) NOT NULL ,
         client_prenom        Varchar (50) NOT NULL ,
-        client_adresseLigne1 Varchar (100) NOT NULL ,
-        client_adresseLigne2 Varchar (100) NOT NULL ,
-        client_ville         Varchar (50) NOT NULL ,
-        client_telephone     Varchar (12) NOT NULL ,
-        client_mail          Varchar (25) NOT NULL
+        client_telephone     Varchar (10) NOT NULL ,
+        client_mail          Varchar (25) NOT NULL,
+        client_adresse       Varchar (100) NOT NULL ,
+        client_codePostal    Varchar (5) NOT NULL ,
+        client_ville         Varchar (50) NOT NULL
 	,CONSTRAINT CLIENT_PK PRIMARY KEY (client_id)
 )ENGINE=InnoDB;
 
@@ -25,13 +27,14 @@ CREATE TABLE CLIENT(
 #------------------------------------------------------------
 # Table: COMMERCIAL
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS COMMERCIAL;
 CREATE TABLE COMMERCIAL(
-        commercial_id          Int  Auto_increment  NOT NULL ,
+        commercial_id          int  Auto_increment  NOT NULL ,
         commercial_nom         Varchar (50) NOT NULL ,
-        comercial_prenom       Varchar (50) NOT NULL ,
+        commercial_prenom      Varchar (50) NOT NULL ,
         commercial_identifiant Varchar (25) NOT NULL ,
-        commercial_motDePasse  Varchar (25) NOT NULL
+        commercial_motDePasse  Varchar (255) NOT NULL , 
+		commercial_matricule   Varchar (30) NOT NULL
 	,CONSTRAINT COMMERCIAL_PK PRIMARY KEY (commercial_id)
 )ENGINE=InnoDB;
 
@@ -39,11 +42,11 @@ CREATE TABLE COMMERCIAL(
 #------------------------------------------------------------
 # Table: GAMME
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS GAMME;
 CREATE TABLE GAMME(
         gamme_id          Int  Auto_increment  NOT NULL ,
         gamme_libelle     Varchar (50) NOT NULL ,
-        gamme_description Varchar (200) NOT NULL
+        gamme_description Varchar (1000) NOT NULL
 	,CONSTRAINT GAMME_PK PRIMARY KEY (gamme_id)
 )ENGINE=InnoDB;
 
@@ -51,7 +54,7 @@ CREATE TABLE GAMME(
 #------------------------------------------------------------
 # Table: PROJET
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS PROJET;
 CREATE TABLE PROJET(
         projet_id     Int  Auto_increment  NOT NULL ,
         commercial_id Int NOT NULL ,
@@ -66,12 +69,11 @@ CREATE TABLE PROJET(
 #------------------------------------------------------------
 # Table: MODELE
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS MODELE;
 CREATE TABLE MODELE(
         modele_id           Int  Auto_increment  NOT NULL ,
         modele_libelle      Varchar (50) NOT NULL ,
-        modele_description  Varchar (200) NOT NULL ,
-        modele_illustration Varchar (50) NOT NULL
+        modele_description  Varchar (1000) NOT NULL
 	,CONSTRAINT MODELE_PK PRIMARY KEY (modele_id)
 )ENGINE=InnoDB;
 
@@ -79,11 +81,11 @@ CREATE TABLE MODELE(
 #------------------------------------------------------------
 # Table: MODULE
 #------------------------------------------------------------
-
-CREATE TABLE MODULE(
+DROP TABLE IF EXISTS MODULES;
+CREATE TABLE MODULES(
         module_id           Int  Auto_increment  NOT NULL ,
         module_libelle      Varchar (50) NOT NULL ,
-        module_description  Varchar (200) NOT NULL ,
+        module_description  Varchar (1000) NOT NULL ,
         module_longueur     Int NOT NULL ,
         module_largeur      Int NOT NULL ,
         module_typeMateriau Varchar (50) NOT NULL ,
@@ -98,7 +100,7 @@ CREATE TABLE MODULE(
 #------------------------------------------------------------
 # Table: DEVIS
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS DEVIS;
 CREATE TABLE DEVIS(
         devis_id           Int  Auto_increment  NOT NULL ,
         devis_dateCreation Date NOT NULL ,
@@ -115,7 +117,7 @@ CREATE TABLE DEVIS(
 #------------------------------------------------------------
 # Table: disposer
 #------------------------------------------------------------
-
+DROP TABLE IF EXISTS DISPOSER;
 CREATE TABLE disposer(
         modele_id Int NOT NULL ,
         gamme_id  Int NOT NULL

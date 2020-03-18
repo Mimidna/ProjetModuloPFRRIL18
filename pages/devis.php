@@ -1,20 +1,14 @@
 <!doctype html>
 <html lang="fr">
-<?php include "database.php"; 
-$laFinition=$_GET['finition'];
-$BV=$_GET['BV'];
-$Moto=$_GET['Moto'];
-$Siege=$_GET['Siege'];
-$Jantes=$_GET['Jantes'];
-$Couleur=$_GET['Couleur'];
-$CouleurRetro=$_GET['CouleurRetro'];
-$Camera=$_GET['Camera'];
-$GPS=$_GET['GPS'];
-$Toit=$_GET['Toit'];
+<?php
+include '../include/TraitementBDD/BDDFicheClient.php';
+include '../include/TraitementBDD/BDDChoixGamme.php';
+include '../include/TraitementBDD/BDDChoixModele.php';
 ?>
+
 <head>
     <!-- META INFORMATIONS-->
-    <title>Voltik</title>
+    <title>Devis</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Voltik">
@@ -35,8 +29,6 @@ $Toit=$_GET['Toit'];
 </br>   
 
     <table class="tableauDevis">
-        
-		<?php ComposantsVoiture($BV,$Moto, $Siege, $Jantes, $Couleur,$CouleurRetro,$Camera,$GPS,$Toit, $laFinition) ?>
 
     </table>
 

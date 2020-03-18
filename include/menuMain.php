@@ -1,14 +1,5 @@
 <?php
-
 session_start();
-
-//if (session_start==0)
-//    {
-//    session_start();
-//        }
-
-$nomCommercial = $_SESSION['username'];
-$prenomCommercial = $_SESSION['userFirstName'];
 ?>
 
 <header>
@@ -18,20 +9,18 @@ $prenomCommercial = $_SESSION['userFirstName'];
                    
 
                         <!-- En tete Madera -->
-                        <a class="navbar-brand" href="../pages.espacePerso.php">
+                        <a class="navbar-brand" href="../pages/espacePerso.php">
                             <img src="../css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
                         </a>
                         <div class="entete">
-                        <h2><?php echo 'Bienvenue : '. $prenomCommercial.'  '.$nomCommercial. ' !' ?></h2>
+                        <h2><?php echo 'Bienvenue : '. $_SESSION['userFirstName'].'  '.$_SESSION['userName']. ' !' ?></h2>
                         </div>      
 
                         <button type="submit" class="btn btn-primary" id="deconnexion">
                             <?php  $link_address1 = '../index.php';
-                            session_destroy();
+                            //session_destroy();
                                 echo "<a href='".$link_address1."'>
                                     Déconnexion </a>"; ?>
-									
-									
                         </button>
 						
                        <!-- ici pour la requete -->

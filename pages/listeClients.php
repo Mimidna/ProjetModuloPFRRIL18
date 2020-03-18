@@ -1,10 +1,6 @@
 <!doctype html>
 <html lang="fr">
 
-
-  <?php
- //include 'database.php';
-?> 
 <!--HEADER-->
 
 <?php
@@ -16,8 +12,8 @@ include "../include/header.php";
 
 <?php
 include "../include/menuMain.php";
+include "../include/TraitementBDD/BDDListeClients.php";
 ?>
-
 
 <!--CONTENU-->
 
@@ -29,41 +25,11 @@ include "../include/menuMain.php";
             <input id="search" name="q" type="text" placeholder="Rechercher" />
             <input id="search-btn" type="submit" value="Rechercher" />
         </form>
-
     </div>
-
             <ul class="listeClient">
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-             <li><a href="ficheClient.php">John DOE</a></li> 
-           
-
+                <?php listingDesClients();?>
             </ul>
-       
  </div>
-
-
 
 <!--FOOTER-->
 

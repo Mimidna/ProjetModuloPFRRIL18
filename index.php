@@ -1,6 +1,11 @@
+<?php
+session_start();
+session_destroy();
+?>
+
+
 <!doctype html>
 <html lang="fr">
-
 
 <!--HEADER-->
 
@@ -28,22 +33,22 @@
 <!--ENTETE-->
 
 
-<header>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+    <header>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                <nav class="navbar-nav navbar-expand-md navbar-dark navbar-static-top" role="navigation" id="menuprincipal">
-                   
+                    <nav class="navbar-nav navbar-expand-md navbar-dark navbar-static-top" role="navigation" id="menuprincipal">
 
-                        <!-- En tete Madera -->
-                        <a class="navbar-brand" href="https://www.fr.madera.com/">
-                            <img src="css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
-                        </a>
-                        <div class="entete">
-                         MODULO 
-                        </div>                      
-                </nav>
-            </div>
-</header>
+
+                            <!-- En tete Madera -->
+                            <a class="navbar-brand" href="https://www.fr.madera.com/">
+                                <img src="css/logos/madera.png" alt="Madera" id="sogeti-labs-logo-menu" style="width:100px" />
+                            </a>
+                            <div class="entete">
+                             MODULO
+                            </div>
+                    </nav>
+                </div>
+    </header>
 
 
 
@@ -53,7 +58,7 @@
             <div class="row">
                 <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4">
 
-                    <form name="sentMessage" id="co" action="include\connexion.php" method="POST">
+                    <form name="sentMessage" id="co" action="include/TraitementBDD/BDDAuthentification.php" method="POST">
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label class="id"><strong>Identifiant</strong></label>
@@ -70,19 +75,13 @@
                         </div>
                         
                         <button type="submit" class="btn btn-primary" id="connexion" name="validConnexion">
-                             <a href="pages/espacePerso.php">Connexion</a>
+                             Connexion
                         </button>
                     </form>
+
                 </div>
             </div>
 </div>
-
-
-
-
-
-
-
 
 
     <!--SCRIPTS-->
@@ -90,10 +89,6 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap-4.3.1.min.js"></script>
-
-
-
-
 
 </body>
 

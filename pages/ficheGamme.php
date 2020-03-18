@@ -1,48 +1,48 @@
 <!doctype html>
 <html lang="fr">
 
-
-  <?php
- //include 'database.php';
-?> 
 <!--HEADER-->
 
 <?php
+include '../include/TraitementBDD/BDDFicheClient.php';
+include '../include/TraitementBDD/BDDChoixGamme.php';
 include "../include/header.php";
 ?>
 
-
 <body >
+<h1> PRESENTATION D'UNE GAMME</h1>
+<h2> Choix de la gamme</h2>
 
 <?php
 include "../include/menuMain.php";
+$client = loadClient($_GET['clientId']);
+$detailsGamme = loadGamme($_GET['gammeId']);
+
+
 ?>
 
 
 <!--CONTENU-->
 
 <div id="image-rondin ">
-    <a href="choixGamme.php">
+    <a href="choixGamme.php?clientId=<?= $client[0] ?>">
         <img src="../css/logos/flecheretour.png" alt="retour" class="retour" />
     </a>
 
-            
                <div class="gamme">
-                 Gamme Chalet<br/>
-                 <a href="ficheGamme.php">
-                     <img src="../images/chalet.png" alt="chalet" class="imgGamme"/>
-                 </a>
+                 Presentation de la gamme <?= $detailsGamme[1] ?><br/>
+                     <a href="ficheGamme.php">
+                         <img src="../images/<?=strtolower($detailsGamme[1])?>_1.png" height="352" width="470" alt="<?=$detailsGamme[1]?>" class="imgGamme"/>
+                         <img src="../images/<?=strtolower($detailsGamme[1])?>_2.png" height="352" width="470" alt="<?=$detailsGamme[1]?>" class="imgGamme"/>
+                         <img src="../images/<?=strtolower($detailsGamme[1])?>_3.png" height="352" width="470" alt="<?=$detailsGamme[1]?>" class="imgGamme"/>
+                     </a>
                </div>
-           
-           
+
                <div class="descriptionGamme">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis, est id molestie laoreet, 
-                turpis nunc laoreet felis, sit amet suscipit enim nulla id lorem. Ut et porta nisl. Morbi euismod dolor nec felis ornare tincidunt. 
-                Fusce facilisis diam vitae pulvinar sagittis. Aenean auctor dolor a malesuada blandit. Vivamus maximus lorem non risus varius rhoncus. 
-                Suspendisse potenti. Curabitur vitae ante sed justo eleifend egestas scelerisque porta urna. 
+                   <?= $detailsGamme[2] ?>
                </div>
             
-             <button type="submit" class="btn btn-primary" id="selectionGamme"><a href="choixModele.php">Séléctionné gamme</a></button>
+             <button type="submit" class="btn btn-primary" id="selectionGamme"><a href="choixModele.php?clientId=<?= $client[0] ?>&gammeId=<?= $detailsGamme[0] ?>">Séléctionner cette gamme</a></button>
  </div>
 
 

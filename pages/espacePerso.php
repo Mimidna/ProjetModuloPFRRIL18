@@ -1,16 +1,11 @@
 <!doctype html>
 <html lang="fr">
 
-
-  <?php
- //include 'database.php';
-?> 
 <!--HEADER-->
 
 <?php
 include "../include/header.php";
 ?>
-
 
 <body >
 
@@ -23,23 +18,23 @@ include "../include/menuMain.php";
 
 <div id="image-rondin ">
             <div class="row buttonPerso">
-              
-                <button class="favorite styled"
-                     type="button">
-                     <a href="listeClients.php">
-                     Liste Client
-                     </a>
-                </button>
 
-            </div>
-            <div class="row">
-              
-                <button class="favorite styled" 
-                     type="button">
-                     <a href="creationClient.php">
-                     Nouveau client
+                 <button class="favorite styled"
+                     name="listeDesClients">
+                     <a href="listeClients.php">
+                     Liste Clients
                      </a>
                 </button>
+            </div>
+
+            <div class="row">
+                  <button class="favorite styled"
+                          type="button">
+                      <a href="creationClient.php">
+                          Nouveau client
+                      </a>
+                  </button>
+
 
             </div>
 
@@ -51,7 +46,6 @@ include "../include/menuMain.php";
                      Nouveau projet
                      </a>
                 </button>
-
             </div>
             
  </div>

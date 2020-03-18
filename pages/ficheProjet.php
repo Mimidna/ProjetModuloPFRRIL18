@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="fr">
 
-
-  <?php
- //include 'database.php';
-?> 
 <!--HEADER-->
 
 <?php
+include '../include/TraitementBDD/BDDFicheClient.php';
+include '../include/TraitementBDD/BDDChoixGamme.php';
+include '../include/TraitementBDD/BDDChoixModele.php';
 include "../include/header.php";
 ?>
 
@@ -16,6 +15,13 @@ include "../include/header.php";
 
 <?php
 include "../include/menuMain.php";
+$client = loadClient($_GET['clientId']);
+$detailsGamme = loadGamme($_GET['gammeId']);
+$detailsModele = loadModele($_GET['modeleId']);
+
+//var_dump($client);
+//var_dump($detailsGamme);
+//var_dump($detailsModele);
 ?>
 
 
@@ -27,8 +33,8 @@ include "../include/menuMain.php";
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="nomClient">
                 <img src="../css/logos/profil.png" alt="profil" class="iconeClient"/>
-                     John Doe
-                <a href="creationClient.php">
+                       <?= $client[1].' '.$client[2] ?>
+                       <a href="creationClient.php?clientId=<?= $client[0]?>">
                    <img src="../css/logos/modification.png" alt="modif" class="iconeClient"/>
                 </a>
                    </div>
@@ -103,7 +109,7 @@ include "../include/menuMain.php";
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="nomClient">
-                    N° client : J DO 19 02 AT 001
+                    N° client : <?= $client[0]?>
                    </div>
                 </div>
             </div>
@@ -112,19 +118,20 @@ include "../include/menuMain.php";
             <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="nomClient">
-                     N° Commercial : 59 01 AT 001
+                       Matricule Commercial : <?= $_SESSION['userMatricule'] ?>
                    </div>
                 </div>
             </div>
                 <div class="row">
                <div class="offset-lg-4 offset-mb-4 col-xs-12 col-ms-12 col-lg-4 mb-4 ">
                    <div class="nomClient">
-                     Gamme et Modèle: Chalet Exclusive
+                     Gamme choisie :<?= $detailsGamme[1] ?><br>
+                     Modele choisi :<?= $detailsModele[1] ?>
                    </div>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary" id="btn-devis"><a href="devis.php">Devis</a></button>
+            <button type="submit" class="btn btn-primary" id="btn-devis"><a href="devis.php">Générer un devis</a></button>
  </div>
 
 
